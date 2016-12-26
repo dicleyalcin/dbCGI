@@ -3,13 +3,26 @@
 <head>
 
     <style>
+        div.header{
+            padding: 0;
+            color: white;
+            margin-bottom:2px;
+            width:100%;
+            background-color: #3F3F3F;
+            clear: left;
+            text-align: center;
+            position: fixed;
+            overflow: auto;
+        }
+
         body {
             margin: 0;
+            
         }
 
         ul2 {
-            list-style-type: square;
-            margin: 2px;
+            list-style-type: none;
+            margin-top:0;
             padding: 1px;
             width: 12%;
             height: 100%;
@@ -34,20 +47,41 @@
             background-color: mediumpurple;
             color: white;
         }
-    
-    </style>
 
-        <body style='font-family:"Arial"'>
-        <ul2>
-        <li><a href="http://otulab.unl.edu/dbcgi">Home</a></li>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    </style>
+    <div class="header"> 
+        <ul>
+        <li><a class="active" href="#home">Home</a></li>
         <li><a href="/static/readme/readme.html">Tutorial</a></li>
-        <li><a href="/static/readme/hg38.html"> <b>HG38</b> Statistics</a></li>
-        <li><a href="/static/readme/mm10.html"> <b>MM10</b> Statistics</a></li>
-        <li><a href="/static/readme/dm3.html"> <b>DM3</b> Statistics</a></li>
-        <li><a href="/static/readme/ce10.html"> <b>CE10</b> Statistics</a></li>
-        <li><a class="active" href="/static/readme/rn6.html"> <b>RN6</b> Statistics</a></li>
+        <li><a href="/static/readme/hg38.html"> <b>Human (Hg38)</b> Statistics</a></li>
+        <li><a href="/static/readme/mm10.html"> <b>Mouse (Mm10)</b> Statistics</a></li>
+        <li><a href="/static/readme/dm3.html"> <b>Fruit Fly (Dm3)</b> Statistics</a></li>
+        <li><a href="/static/readme/ce10.html"> <b>Worm (Ce10)</b> Statistics</a></li>
+        <li><a href="/static/readme/rn6.html"> <b> Rat (Rn6)</b> Statistics</a></li>
+        <li><a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
         <!--<li><a href="#cite">Please cite</a></li>-->
-        </ul2>    
+        </ul>
+    </div>    
 
 
  
