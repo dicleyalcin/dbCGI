@@ -25,7 +25,7 @@ import zipfile
 from StringIO import *
 import os
 import sys, time
-from mysite.models import Hg38, Mm10, Dm3, Ce10, Rn6
+from dbCGI.models import Hg38, Mm10, Dm3, Ce10, Rn6
 
 # Flatten (flattens list)
 def flatten(seq,container=None):

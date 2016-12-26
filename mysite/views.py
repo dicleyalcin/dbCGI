@@ -38,8 +38,8 @@ from StringIO import *
 import os
 import sys, time
 # Organisms (Models)
-from mysite.models import Hg38, Mm10, Dm3, Ce10, Rn6
-from mysite.utils import *
+from dbCGI.models import Hg38, Mm10, Dm3, Ce10, Rn6
+from dbCGI.utils import *
 
 # Create your views here.
 

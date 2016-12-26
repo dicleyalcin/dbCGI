@@ -25,21 +25,21 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^$', 'mysite.views.index'),
-    url(r'^hg38IDresult$', 'mysite.views.hg38IDresult'),
-    url(r'^mm10IDresult$', 'mysite.views.mm10IDresult'),
-    url(r'^dm3IDresult$', 'mysite.views.dm3IDresult'),
-    url(r'^ce10IDresult$', 'mysite.views.ce10IDresult'),
-    url(r'^rn6IDresult$', 'mysite.views.rn6IDresult'),
-    url(r'^hg38LOCresult$', 'mysite.views.hg38LOCresult'),
-    url(r'^mm10LOCresult$', 'mysite.views.mm10LOCresult'),
-    url(r'^dm3LOCresult$', 'mysite.views.dm3LOCresult'),
-    url(r'^ce10LOCresult$', 'mysite.views.ce10LOCresult'),
-    url(r'^rn6LOCresult$', 'mysite.views.rn6LOCresult'),    
+    url(r'^$', 'dbCGI.views.index'),
+    url(r'^hg38IDresult$', 'dbCGI.views.hg38IDresult'),
+    url(r'^mm10IDresult$', 'dbCGI.views.mm10IDresult'),
+    url(r'^dm3IDresult$', 'dbCGI.views.dm3IDresult'),
+    url(r'^ce10IDresult$', 'dbCGI.views.ce10IDresult'),
+    url(r'^rn6IDresult$', 'dbCGI.views.rn6IDresult'),
+    url(r'^hg38LOCresult$', 'dbCGI.views.hg38LOCresult'),
+    url(r'^mm10LOCresult$', 'dbCGI.views.mm10LOCresult'),
+    url(r'^dm3LOCresult$', 'dbCGI.views.dm3LOCresult'),
+    url(r'^ce10LOCresult$', 'dbCGI.views.ce10LOCresult'),
+    url(r'^rn6LOCresult$', 'dbCGI.views.rn6LOCresult'),    
     url(r'^admin/', include(admin.site.urls)),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),    
-    url(r'^thanks/$', 'mysite.views.thanks', name='thanks'),
-    url(r'^$', 'mysite.views.contact', name='contact'),
+    url(r'^thanks/$', 'dbCGI.views.thanks', name='thanks'),
+    url(r'^$', 'dbCGI.views.contact', name='contact'),
 ]
 
 #The following enable structural 'static' files while in development mode.

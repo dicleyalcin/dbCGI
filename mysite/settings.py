@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'social.apps.django_app.default',
-    'mysite',
+    'dbCGI',
     'django_nvd3',
     'djangobower',
     'rest_framework',
@@ -63,7 +63,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'mysite.urls'
+ROOT_URLCONF = 'dbCGI.urls'
 
 TEMPLATES = [
     {
@@ -92,7 +92,7 @@ TEMPLATES = [
 
 
 
-WSGI_APPLICATION = 'mysite.wsgi.application'
+WSGI_APPLICATION = 'dbCGI.wsgi.application'
 
 SITE_ID = 1
 
@@ -166,7 +166,7 @@ STATICFILES_FINDERS = [
 
 #BOWER_COMPONENTS_ROOT = '/PROJECT_ROOT/components/'
 
-MEDIA_ROOT = os.path.join('Users/greengageplum/mysite', 'media')
+MEDIA_ROOT = os.path.join('Users/greengageplum/dbCGI', 'media')
 MEDIA_URL = '/media/'
 BOWER_PATH = '/usr/local/bin/bower'
 
