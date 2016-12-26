@@ -166,7 +166,7 @@ STATICFILES_FINDERS = [
 
 #BOWER_COMPONENTS_ROOT = '/PROJECT_ROOT/components/'
 
-MEDIA_ROOT = os.path.join('Users/greengageplum/dbCGI', 'media')
+MEDIA_ROOT = os.path.join('Users/greengageplum/dbCGI/mysite', 'media')
 MEDIA_URL = '/media/'
 BOWER_PATH = '/usr/local/bin/bower'
 
