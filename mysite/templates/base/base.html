@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    
+<head> 
+    <title>{% block title %} dbCGI {% endblock %}</title>
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'/ >
+        <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+        <!--<script type="text/javascript" src="{% static "js/jquery.js" %}"></script>-->
+        <script type="text/javascript">                                        
+            var created = 0;
+                function displayAccordingly() {                    
+                    if (created == 1) {                       
+                        removeDrop();                        
+                    }                    
+                    //Call mainMenu the main dropdown menu
+                    var mainMenu = document.getElementById('id_main_menu');
+                    //Create the new dropdown menu
+                    var whereToPut = document.getElementById('myDiv');
+                    var newDropdown = document.createElement('select');
+                    
+                    //var anaForm = document.getElementByID('ana');
+                    //#anaForm.appendChild(mainMenu)
+                    
+                    
+                    newDropdown.setAttribute('id',"newDropdownMenu");
+                    
+                    whereToPut.appendChild(newDropdown);
+                    if (mainMenu.value == "hs") { //The person chose human
+
+                        //Add an option called "Dec. 2013 (hg38, GRCh38)"
+                        var optionhg38=document.createElement("option");
+                        optionhg38.text="Dec. 2013 (hg38, GRCh38)";
+                        newDropdown.add(optionhg38,newDropdown.options[null]);                        
+
+                        /*
+                        //Add an option called "Feb. 2009 (hg19, GRCh37)"
+                        var optionhg19=document.createElement("option");
+                        optionhg19.text="Feb. 2009 (hg19, GRCh37)";
+                        newDropdown.add(optionhg19,newDropdown.options[null]);
+
+                        //Add an option called "Mar. 2006 (hg18, NCBI36)"
+                        var optionhg18=document.createElement("option");
+                        optionhg18.text="Mar. 2006 (hg18, NCBI36)";
+                        newDropdown.add(optionhg18,newDropdown.options[null]);
+
+                        //Add an option called "May. 2004 (hg17, NCBI35)"
+                        var optionhg17=document.createElement("option");
+                        optionhg17.text="May. 2004 (hg17, NCBI35)";
+                        newDropdown.add(optionhg17,newDropdown.options[null]);
+
+                        //Add an option called "Jul. 2003 (hg16, NCBI34)"
+                        var optionhg16=document.createElement("option");
+                        optionhg16.text="Jul. 2003 (hg16, NCBI34)";
+                        newDropdown.add(optionhg16,newDropdown.options[null]);  
+                        */            
+
+            } else if (mainMenu.value == "mm") { //The person chose mouse
+
+
+                        //Add an option called "Dec. 2011 (mm10, GRCm38)"
+                        var optionmm10=document.createElement("option");
+                        optionmm10.text="Dec. 2011 (mm10, GRCm38)";
+                        newDropdown.add(optionmm10,newDropdown.options[null]);
+
+                        /*
+                        //Add an option called "Jul. 2007 (mm9, NCBI37)"
+                        var optionmm9=document.createElement("option");
+                        optionmm9.text="Jul. 2007 (mm9, NCBI37)";
+                        newDropdown.add(optionmm9,newDropdown.options[null]);
+                        */
+            } else if (mainMenu.value == "ce"){ // The person chose worm
+                // Add an option called "Oct. 2010 (Wormbase v.WS220/ce10)"
+                var optionce10=document.createElement("option");
+                optionce10.text="Oct. 2010 (Wormbase v.WS220/ce10)";
+                newDropdown.add(optionce10,newDropdown.options[null]);
+
+            } else if (mainMenu.value == "rn"){ // The person chose worm
+                // Add an option called "Oct. 2010 (Wormbase v.WS220/ce10)"
+                var optionrn6=document.createElement("option");
+                optionrn6.text="Jul. 2014 (RGSC Rnor_6.0/rn6)";
+                newDropdown.add(optionrn6,newDropdown.options[null]);
+
+
+
+                    } else if (mainMenu.value == "dm") { //The person chose fruit fly
+
+                        //Add an option called "Apr. 2006 (BDGP R5/dm3)"
+                        var optiondm3=document.createElement("option");
+                        optiondm3.text="Apr. 2006 (BDGP R5/dm3)";
+                        newDropdown.add(optiondm3,newDropdown.options[null]);                        
+
+                        /*
+                        //Add an option called "Aug. 2014 (BDGP Release 6 + ISO1 MT/dm6)"
+                        var optiondm6=document.createElement("option");
+                        optiondm6.text="Aug. 2014 (BDGP Release 6 + ISO1 MT/dm6)";
+                        newDropdown.add(optiondm6,newDropdown.options[null]);
+                        */                                       
+                    }
+                    created = 1                    
+                }
+                function removeDrop(){
+                    var d = document.getElementById('myDiv');
+                    var oldmenu = document.getElementById('newDropdownMenu');                    
+                    d.removeChild(oldmenu);                                        
+                }
+            </script> 
+    
+
+
+<body>
+    <style>
+        div.header{
+            padding: 1em;
+            color: white;
+            margin-bottom:2px;
+            width:100%;
+            background-color: #3F3F3F;
+            clear: left;
+            text-align: center;
+            position: fixed;
+            overflow: auto;
+        }
+    </style>
+
+        <div class="header">   
+          <center><h2> CpG Island Annotation Database </h2></center>
+        </div>
+
+    <br></br>
+    <br></br>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        ul2 {
+            list-style-type: none;
+            margin-top:10.5px;
+            padding: 1px;
+            width: 12%;
+            height: 100%;
+            background-color: darkgray;
+            position: fixed;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 10px 8px 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: mediumaquamarine;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: mediumpurple;
+            color: white;
+        }
+    </style>
+        <ul2>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="/static/readme/readme.html">Tutorial</a></li>
+        <li><a href="/static/readme/hg38.html"> <b>HG38</b> Statistics</a></li>
+        <li><a href="/static/readme/mm10.html"> <b>MM10</b> Statistics</a></li>
+        <li><a href="/static/readme/dm3.html"> <b>DM3</b> Statistics</a></li>
+        <li><a href="/static/readme/ce10.html"> <b>CE10</b> Statistics</a></li>
+        <li><a href="/static/readme/rn6.html"> <b>RN6</b> Statistics</a></li>
+        <!--<li><a href="#cite">Please cite</a></li>-->
+        </ul2>
+        
+	<table>  	
+            <td width='20%'>	
+			<td align='justify' width='60%'>
+                <br></br>
+                <center><div class="logo"></div> </center> 
+                <br></br>
+                dbCGI is a database and web application for analyzing CpG islands (CGIs) based on their locations, sequence properties, 
+                and associations with genes. dbCGI has two main query objectives: <br></br>
+                <ol type="1">
+                    <li>Given a list of genes, the user can retrieve annotated CGIs associated with the genes, based on the CGIs’ locational proximity.</li>
+                    <li>Given a list of chromosomal locations, the user can retrieve annotated CGIs and associated genes within the given range.</li>
+                </ol> 
+                dbCGI currently employs three CpG island detection algorithms and is available for five organisms. 
+                Please refer to the “tutorial” on the left menu for more details. dbCGI annotates CGIs in relation to genes using the following criteria:
+
+                <!--Table below shows the annotation criteria, based on modified definitions from <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1386721/"> Bock <i>et al</i> 
+                study (2006)</a> Table below shows the 4 annotation types, along with their definitions. -->
+                
+                <br></br>
+                <style>
+                    table {
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    th, td {
+                        text-align: left;
+                        padding: 8px;
+                    }
+
+                    tr:nth-child(even){background-color: #f2f2f2}
+
+                    th {
+                        background-color: #4CAF50;
+                        color: white;
+                    }
+                    </style>
+
+                    <h2>CGI Types</h2>
+
+                    <table>
+                    <tr>
+                        <th>Type</th>
+                        <th>Definition</th>
+                    </tr>
+                    <tr>
+                        <td>Promoter</td>
+                        <td>CGI overlaps with [-5kb,TSS] (TSS: Transcription Start Site) </td>
+                    </tr>
+                    <tr>
+                        <td>Intragenic</td>
+                        <td>CGI overlaps with [TSS,TES] (TES: Transcription End Site)</td>
+                    </tr>
+                    <tr>
+                        <td>Gene-Terminal</td>
+                        <td>CGI overlaps with [CDSEnd, TES] (CDSEnd: Coding Sequence End Site)</td>
+                    </tr>
+                    <tr>
+                        <td>Intergenic</td>
+                        <td>CGI is not associated with any gene</td>
+                    </tr>
+                    </table>
+                        
+				<br><br>
+                <center> <div class="annot"></div> </center>                
+                
+                <!--   			
+				This tool has been developed by Dicle Yalcin, a member of OTULAB in Electrical and Computer Engineering Department in
+                University of Lincoln-Nebraska. If using CGIAnnotDB, please cite: <i> --- Citation may come here soon ---</i> 			
+				<br></br>-->			
+           <td align='justify' width='70%'>
+    </table>
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+
+
+    <table>
+            <td width='20%' height='40%'></td>	
+			<td align='justify' width='20%' height='40%'>
+                <form id="ana" enctype="multipart/form-data" method="POST">                             
+                                                                          
+                            <h4> First </h4>  
+                            {% csrf_token %}                          
+                            <div class="boxed">
+                                <div id="myDiv"></div>
+                                {{ form.as_p }} 
+                            </div>          
+                           <br></br>
+                           
+                           <h4> Then </h4>
+                           <div class="boxed">
+                                {{ IDform.as_p }}    
+                                (<a href='../../static/readme/idfile.txt'> HERE </a> you can find a sample Gene ID File as an example.) 
+                                <br></br>                               
+                                 <input type="submit" value="Submit IDs" /> 
+                          </div>
+                                 
+                           <br></br>
+                           
+                           <h4> Or </h4>                               
+                           <div class="boxed">                               
+                                {{ locForm.as_p }} 
+                                 (<a href='../../static/readme/locfile.txt'> HERE </a> you can find a sample Chromosomal Location File as an example.)
+                                 <br></br>
+                                 <input type="submit" value="Submit locations" />  
+                           </div>                             
+                    <td align='justify' width='20%' height='40%'> </td> 
+                                                     
+                </form>
+                </td>   
+    </table>
+    <br></br>
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+  
+
+  
+    <table bgcolor="#98AFC7"> 
+            <td width='40%'></td>	
+			<td align='right' width='20%'>
+                       <div style="width:800px;">
+                           <div style="width:500px; float:left;">
+                             <div float="left" class="otulablogo"></div> <br />
+                            <br />
+                            <div>
+                            Department of Electrical and Computer Engineering <br >
+                            University of Nebraska-Lincoln <br />
+                            209N Scott Engineering Center <br/>
+                            P.O. Box 880511 <br />
+                            Lincoln, NE 68588-0511, USA
+                            </div>
+                          </div>
+                        </div>
+                        <div style="width:300px; float:right;">
+                            <div float="left" class="unllogo"></div> <a href="http://engineering.unl.edu/">Visit UNL Engineering Website</a>
+                            <br></br>                                                                  
+                            For questions and remarks, please contact <a href='mailto:dicle.yalcin2@gmail.com'> Dicle Yalcin</a> or <a href='mailto:hotu2@unl.edu'> Hasan Otu</a>
+                            </div>
+                       </div>
+                <td align='justify' width='10%'></td>
+                </td>
+        </table>
+        <br></br>
+
+        </body>
+     </head>
+</html>    

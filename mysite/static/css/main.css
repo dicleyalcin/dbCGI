@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite
+}
+    
+.header{
+    height: 70px;
+
+    
+}
+    
+.clr{
+    clear: both;
+}    
+
+.logo{
+    width: 1013px;
+    height: 500px;
+    float: center;
+    background: url('../images/logo.png');
+    background-size: 150px;
+    
+}
+
+.unllogo{
+    width: 150px;
+    height: 60px;
+    float: center;
+    background: url('../images/unl.gif');
+    background-size: 150px;
+    
+}
+
+.annot{
+
+    width: 900px;
+    height: 450px;
+    float: center;
+    background: url('../images/annotations_scheme.jpg');
+    background-size: 900px;
+    
+}
+
+.nav{
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul{
+    width: 20%; 
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li{
+    width: 20px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+.button {
+ 
+    /*basic styles*/
+    width: 200px;  height: 20px;  color: #fff; background-color: #125182;
+    text-align: center;  font-size: 20px;  line-height: 20px;
+ 
+    
+    /*gradient styles*/
+    background-image: background: -webkit-linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b);
+    background-image: background: -o-linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b);
+    background-image: background: linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b); 
+    background: -webkit-linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b);
+    background: -o-linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b);
+    background: linear-gradient(#125182, #1269ab 50%, #004375 51%, #00345b);  
+ 
+ /*border styles*/
+    -moz-border-radius: 20px;
+     -webkit-border-radius: 20px;
+    border-radius: 20px;
+ 
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+ box-shadow:inset 0 0 10px #000000;
+}
+ 
+html *
+{
+   font-size: 1em !important;
+   font-family: Arial !important;
+}
