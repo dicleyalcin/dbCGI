@@ -25,7 +25,7 @@ from . import views
 admin.autodiscover()
 
 urlpatterns = [
-    url(r'^old_url/$', "website.views.url_redirect", name="url-redirect"),
+    url(r'^otulab.unl.edu/:9000$', "website.views.url_redirect", name="url-redirect"),
     url(r'^$', 'mysite.views.index'),
     url(r'^hg38IDresult$', 'mysite.views.hg38IDresult'),
     url(r'^mm10IDresult$', 'mysite.views.mm10IDresult'),

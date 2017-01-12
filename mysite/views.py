@@ -44,7 +44,7 @@ from mysite.utils import *
 # Create your views here.
 
 def url_redirect(request):
-    return HttpResponsePermanentRedirect("http://otulab.unl/edu/dbCGI")
+    return HttpResponsePermanentRedirect("http://otulab.unl.edu/dbCGI")
 
 resultName = ''
 resultName2 = ''
