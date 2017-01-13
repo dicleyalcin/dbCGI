@@ -29,7 +29,7 @@ admin.autodiscover()
 urlpatterns = [
     #url(r'^http://otulab.unl.edu/dbCGI$', "website.views.url_redirect", name="url-redirect"),
     #url(r'^$', 'mysite.views.index'),
-    url(r'^$', RedirectView.as_view(url='/dbCGI/')),
+    url(r'^$', RedirectView.as_view(url='/index/')),
     url(r'^hg38IDresult$', 'mysite.views.hg38IDresult'),
     url(r'^mm10IDresult$', 'mysite.views.mm10IDresult'),
     url(r'^dm3IDresult$', 'mysite.views.dm3IDresult'),
