@@ -28,7 +28,7 @@ admin.autodiscover()
 
 urlpatterns = [
     #url(r'^http://otulab.unl.edu/dbCGI$', "website.views.url_redirect", name="url-redirect"),
-    #url(r'^$', 'mysite.views.index'),
+    url(r'^$', 'mysite.views.index'),
     url(r'^$', RedirectView.as_view(url='http://otulab.unl.edu/dbCGI')),
     url(r'^hg38IDresult$', 'mysite.views.hg38IDresult'),
     url(r'^mm10IDresult$', 'mysite.views.mm10IDresult'),
