@@ -22,6 +22,8 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.views.generic.base import RedirectView
 from . import views
+from django.views.generic import RedirectView
+
 admin.autodiscover()
 
 urlpatterns = [
