@@ -43,8 +43,8 @@ from mysite.utils import *
 
 # Create your views here.
 
-def url_redirect(request):
-    return HttpResponsePermanentRedirect("http://otulab.unl.edu:9000")
+#def url_redirect(request):
+#    return HttpResponsePermanentRedirect("http://otulab.unl.edu:9000")
 
 resultName = ''
 resultName2 = ''
