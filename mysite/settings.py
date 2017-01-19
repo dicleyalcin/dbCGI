@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'social.apps.django_app.default',
     'mysite',
     'django_nvd3',
-    'djangobower',
     'rest_framework',
 ]
 
