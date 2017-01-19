@@ -1,5 +1,6 @@
 appnope==0.1.0
 closure==20150315
+cufflinks
 decorator==4.0.9
 Django==1.9.6
 et-xmlfile==1.0.1
@@ -8,13 +9,16 @@ ipdb==0.9.3
 ipython==4.1.2
 ipython-genutils==0.1.0
 jdcal==1.2
+matplotlib
 mygene==2.3.0
 MySQL-python==1.2.5
+numpy
 oauthlib==1.0.3
 openpyxl==2.3.5
 pathlib2==2.1.0
 pexpect==4.0.1
 pickleshare==0.7.2
+plotly
 ptyprocess==0.5.1
 PyJWT==1.4.0
 python-openid==2.2.5
