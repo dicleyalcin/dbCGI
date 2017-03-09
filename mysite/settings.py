@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import os.path 
+import django.conf.global_settings as DEFAULT_SETTINGS
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -172,4 +173,8 @@ BOWER_PATH = '/usr/local/bin/bower'
 BOWER_INSTALLED_APPS = (
     'jquery#1.9',
     'underscore',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
+     'utils.context_processors.googleanalytics',
 )

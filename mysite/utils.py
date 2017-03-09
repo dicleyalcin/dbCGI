@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.shortcuts import redirect
 from django.template import RequestContext
+from django.conf import settings
 from .forms import *
 import random, string
 import csv
@@ -110,11 +111,7 @@ def rn6LOCresult(request):
 
 
 
-# These are for result images 
-"""		
-def hg38image(request):
-	with open("hg38images.png", 'r') as f:
-		response = HttpResponse(StringIO(f.read()).getvalue(), content_type='image/png')
-		response['Content-Disposition']='attachment; filename=hg38images.png'
-		return response
-"""
+def googleanalytics(request):
+    return {
+        'google_tracking_id' : settings.GOOGLE_TRACKING_ID,
+    }
