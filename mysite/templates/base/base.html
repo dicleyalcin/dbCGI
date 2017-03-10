@@ -1,10 +1,9 @@
 {% load static %}
-{% load googleanalytics %}
 <!DOCTYPE html>
 <html>
     
 <head> 
- {% googleanalytics 'UA-93417601-1' %}    
+ {% google_analytics 'UA-93417601-1' %}    
     <title>{% block title %} dbCGI {% endblock %}</title>
         <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
         <link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'/ >
@@ -335,9 +334,6 @@
                 </td>
         </table>
         <br></br>
-        <div style="display:none">
-            <img src="{% google_analytics %}" width="0" height="0" />
-        </div>
         </body>
      </head>
 </html>    
