@@ -35,6 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+GOOGLE_ANALYTICS_MODEL = True
 
 # Application definition
 
