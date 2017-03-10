@@ -35,9 +35,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-GOOGLE_ANALYTICS = {
-    'google_analytics_id': 'UA-93417601-1',
-}
 
 # Application definition
 
@@ -65,6 +62,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'google_analytics.middleware.GoogleAnalyticsMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -94,7 +92,7 @@ TEMPLATES = [
 ]
 
 
-
+CELERY_IMPORTS = ('google_analytics.tasks')
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 

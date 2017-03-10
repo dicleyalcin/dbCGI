@@ -1,4 +1,5 @@
 {% load static %}
+{% load analytics %}
 <!DOCTYPE html>
 <html>
     
@@ -333,7 +334,7 @@
                 </td>
         </table>
         <br></br>
-        {% load google_analytics_tags %}
+        {% analytics "UA-93417601-1" %}
         <div style="display:none">
             <img src="{% google_analytics %}" width="0" height="0" />
         </div>
