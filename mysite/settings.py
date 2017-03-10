@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'mysite',
     'django_nvd3',
     'rest_framework',
-    'google_analytics',
+    'analytics',
 ]
 
 MIDDLEWARE_CLASSES = [
