@@ -35,7 +35,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-GOOGLE_ANALYTICS_MODEL = True
+GOOGLE_ANALYTICS_PROPERTY_ID = 'UA-93417601-1'
+GOOGLE_ANALYTICS_DOMAIN = 'otulab.unl.edu'
 
 # Application definition
 
@@ -51,7 +52,10 @@ INSTALLED_APPS = [
     'mysite',
     'django_nvd3',
     'rest_framework',
-    'analytics',
+]
+
+TEMPLATE_CONTEXT_PROCESSORS = [
+    'website.context_processors.google_analytics',
 ]
 
 MIDDLEWARE_CLASSES = [
