@@ -108,10 +108,3 @@ def rn6LOCresult(request):
         response = HttpResponse(StringIO(f.read()).getvalue(), content_type='text/csv')
         response['Content-Disposition']='attachment; filename=rn6LOCresult.csv'
         return response
-
-
-
-def googleanalytics(request):
-    return {
-        'google_tracking_id' : settings.GOOGLE_TRACKING_ID,
-    }

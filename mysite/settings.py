@@ -35,6 +35,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+GOOGLE_ANALYTICS = [
+    'google_analytics_id': 'UA-93417601-1',
+]
 
 # Application definition
 
@@ -50,6 +53,7 @@ INSTALLED_APPS = [
     'mysite',
     'django_nvd3',
     'rest_framework',
+    'google_analytics',
 ]
 
 MIDDLEWARE_CLASSES = [

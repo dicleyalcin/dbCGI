@@ -45,6 +45,7 @@ urlpatterns = [
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),    
     url(r'^thanks/$', 'mysite.views.thanks', name='thanks'),
     url(r'^$', 'mysite.views.contact', name='contact'),
+    (r'^djga/', include('google_analytics.urls')),
 ]
 
 #The following enable structural 'static' files while in development mode.
