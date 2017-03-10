@@ -1,0 +1,93 @@
+/usr/local/lib/python2.7/dist-packages/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+
+/usr/local/lib/python2.7/dist-packages/six.py:808: RemovedInDjango110Warning: SubfieldBase has been deprecated. Use Field.from_db_value instead.
+  return meta(name, bases, d)
+
+/usr/local/lib/python2.7/dist-packages/IPython/paths.py:62: UserWarning: IPython dir '/home/dyalcin/.ipython' is not a writable location, using a temp directory.
+  " using a temp directory.".format(ipdir))
+
+WARNING: Attempting to work in a virtualenv. If you encounter problems, please install IPython inside the virtualenv.
+Performing system checks...
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:32: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.index). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:34: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.hg38IDresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:35: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.mm10IDresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:36: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.dm3IDresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:37: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.ce10IDresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:38: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.rn6IDresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:39: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.hg38LOCresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:40: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.mm10LOCresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:41: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.dm3LOCresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:42: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.ce10LOCresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:43: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.rn6LOCresult). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:46: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.thanks). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:47: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got mysite.views.contact). Pass the callable instead.
+
+
+/home/dyalcin/projects/dbCGI/mysite/urls.py:54: RemovedInDjango110Warning:
+
+django.conf.urls.patterns() is deprecated and will be removed in Django 1.10. Update your urlpatterns to be a list of django.conf.urls.url() instances instead.
+
+
+/usr/local/lib/python2.7/dist-packages/django/conf/urls/__init__.py:89: RemovedInDjango110Warning:
+
+Support for string view arguments to url() is deprecated and will be removed in Django 1.10 (got django.views.static.serve). Pass the callable instead.
+
+
+[10/Mar/2017 02:15:37] "GET / HTTP/1.1" 200 16941
+[10/Mar/2017 02:15:45] "GET /static/readme/idfile.txt HTTP/1.1" 200 83
+[10/Mar/2017 02:15:50] "GET / HTTP/1.1" 200 16941
+[10/Mar/2017 02:16:32] "POST / HTTP/1.1" 200 8888
+[10/Mar/2017 02:17:12] "GET /hg38IDresult HTTP/1.1" 200 12560
+[10/Mar/2017 02:17:15] "GET / HTTP/1.1" 200 16941

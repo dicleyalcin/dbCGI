@@ -174,7 +174,3 @@ BOWER_INSTALLED_APPS = (
     'jquery#1.9',
     'underscore',
 )
-
-TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-     'utils.context_processors.googleanalytics',
-)

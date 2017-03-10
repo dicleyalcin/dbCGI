@@ -1,0 +1,135 @@
+=============ID: SAA1===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: SAA1   is not associated with a CpG Island
+=============ID: PLA2G2A===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: PLA2G2A   is not associated with a CpG Island
+=============ID: TNNI2===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: TNNI2   is not associated with a CpG Island
+=============ID: IL1RL1===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: IL1RL1   is not associated with a CpG Island
+=============ID: CHI3L1===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: CHI3L1   is not associated with a CpG Island
+=============ID: TNNT2===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: TNNT2   is not associated with a CpG Island
+=============ID: 2056===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr7_CGI 224, chr7, 100720483, 100721061, 76.3, 578, 0.78, Promoter, EPO, +, NM_000799;, Intragenic, EPO, +, NM_000799;
+PM_Chr7_CGI 3012, chr7, 100720291, 100721315, 69.0, 1025, 0.6, Promoter, EPO, +, NM_000799;, Intragenic, EPO, +, NM_000799;
+TJ_Chr7_CGI 1364, chr7, 100720372, 100721225, 72.3, 854, 0.65, Promoter, EPO, +, NM_000799;, Intragenic, EPO, +, NM_000799;
+--------------------------------------------------------------------
+This gene has a total number of  3   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 1 CGIs  with 1  Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  1 CGIs with 1 Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  1 CGIswith  1 Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: 6368===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: 6368   is not associated with a CpG Island
+=============ID: 3484===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr7_CGI 1352, chr7, 45888403, 45889063, 72.1, 660, 0.88, Intragenic, IGFBP1, +, NM_000596;
+PM_Chr7_CGI 1707, chr7, 45888028, 45889355, 62.7, 1328, 0.693, Promoter, IGFBP1, +, NM_000596;, Intragenic, IGFBP1, +, NM_000596;
+TJ_Chr7_CGI 815, chr7, 45888102, 45889313, 63.2, 1212, 0.717, Promoter, IGFBP1, +, NM_000596;, Intragenic, IGFBP1, +, NM_000596;
+--------------------------------------------------------------------
+This gene has a total number of  3   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 1 CGIs  with 0  Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  1 CGIs with 1 Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  1 CGIswith  1 Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: 1401===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: 1401   is not associated with a CpG Island
+=============ID: 10068===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: 10068   is not associated with a CpG Island
+=============ID: 7066===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr3_CGI 1541, chr3, 184379728, 184381794, 73.1, 2066, 0.76, Promoter, THPO, -, NM_000460; NM_001290003; NM_001290022; NM_001290028; NM_001290027; NM_001177597; NM_001177598; NM_001289997; NM_001289998; NM_001290026;
+PM_Chr3_CGI 3322, chr3, 184379534, 184382052, 71.0, 2519, 0.705, Promoter, THPO, -, NM_000460; NM_001290003; NM_001290022; NM_001290028; NM_001290027; NM_001177597; NM_001177598; NM_001289997; NM_001289998; NM_001290026;
+TJ_Chr3_CGI 1519, chr3, 184379552, 184381992, 71.4, 2441, 0.72, Promoter, THPO, -, NM_000460; NM_001290003; NM_001290022; NM_001290028; NM_001290027; NM_001177597; NM_001177598; NM_001289997; NM_001289998; NM_001290026;
+--------------------------------------------------------------------
+This gene has a total number of  3   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 1 CGIs  with 1  Promoter CGIs | 0  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  1 CGIs with 1 Promoter CGIs | 0  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  1 CGIswith  1 Promoter CGIs | 0  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: P45985===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr17_CGI 1476, chr17, 12020634, 12021554, 78.2, 920, 0.88, Promoter, MAP2K4, +, NM_003010; NM_001281435;, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+GG_Chr17_CGI 1477, chr17, 12066711, 12066973, 63.4, 262, 0.96, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+PM_Chr17_CGI 1060, chr17, 12020327, 12021914, 65.5, 1588, 0.762, Promoter, MAP2K4, +, NM_003010; NM_001281435;, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+PM_Chr17_CGI 1061, chr17, 12066565, 12067116, 57.2, 552, 0.601, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+TJ_Chr17_CGI 452, chr17, 12020358, 12021871, 66.3, 1514, 0.781, Promoter, MAP2K4, +, NM_003010; NM_001281435;, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+TJ_Chr17_CGI 453, chr17, 12066576, 12067098, 56.5, 523, 0.651, Intragenic, MAP2K4, +, NM_003010; NM_001281435;
+--------------------------------------------------------------------
+This gene has a total number of  6   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 2 CGIs  with 1  Promoter CGIs | 2  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  2 CGIs with 1 Promoter CGIs | 2  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  2 CGIswith  1 Promoter CGIs | 2  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: Q16674===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: Q16674   is not associated with a CpG Island
+=============ID: P22004===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr6_CGI 1138, chr6, 7725862, 7727928, 72.0, 2066, 0.9, Promoter, BMP6, +, NM_001718;, Intragenic, BMP6, +, NM_001718;
+GG_Chr6_CGI 1139, chr6, 7728652, 7728875, 61.9, 223, 0.8, Intragenic, BMP6, +, NM_001718;
+GG_Chr6_CGI 1140, chr6, 7838667, 7838899, 59.1, 232, 0.86, Intragenic, BMP6, +, NM_001718;
+GG_Chr6_CGI 1141, chr6, 7856618, 7856892, 62.0, 274, 0.88, Intragenic, BMP6, +, NM_001718;
+PM_Chr6_CGI 273, chr6, 7725516, 7728958, 64.5, 3443, 0.826, Promoter, BMP6, +, NM_001718;, Intragenic, BMP6, +, NM_001718;
+PM_Chr6_CGI 274, chr6, 7766996, 7767536, 50.0, 541, 0.648, Intragenic, BMP6, +, NM_001718;
+PM_Chr6_CGI 275, chr6, 7838483, 7838982, 50.0, 500, 0.641, Intragenic, BMP6, +, NM_001718;
+PM_Chr6_CGI 276, chr6, 7856498, 7857126, 51.3, 629, 0.627, Intragenic, BMP6, +, NM_001718;
+TJ_Chr6_CGI 144, chr6, 7725671, 7728926, 64.9, 3256, 0.842, Promoter, BMP6, +, NM_001718;, Intragenic, BMP6, +, NM_001718;
+TJ_Chr6_CGI 145, chr6, 7856588, 7857107, 55.0, 520, 0.661, Intragenic, BMP6, +, NM_001718;
+--------------------------------------------------------------------
+This gene has a total number of  10   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 4 CGIs  with 1  Promoter CGIs | 4  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  2 CGIs with 1 Promoter CGIs | 2  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  4 CGIswith  1 Promoter CGIs | 4  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: P51671===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+ID: P51671   is not associated with a CpG Island
+=============ID: P02751===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr2_CGI 1330, chr2, 215435544, 215436274, 69.7, 730, 0.73, Promoter, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;, Intragenic, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;
+PM_Chr2_CGI 4237, chr2, 215426057, 215426556, 50.0, 500, 0.616, Intragenic, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;
+PM_Chr2_CGI 4238, chr2, 215435239, 215436718, 58.7, 1480, 0.674, Promoter, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;, Intragenic, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;
+TJ_Chr2_CGI 1986, chr2, 215435301, 215436703, 59.8, 1403, 0.677, Promoter, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;, Intragenic, FN1, -, NM_001306130; NM_002026; NM_001306129; NM_212482; NM_212478; NM_212474; NM_212476; NM_054034; NM_001306132; NM_001306131;
+--------------------------------------------------------------------
+This gene has a total number of  4   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 1 CGIs  with 1  Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  1 CGIs with 1 Promoter CGIs | 1  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  2 CGIswith  1 Promoter CGIs | 2  Intragenic CGIs |  0 Gene-terminal CGIs.
+
+=============ID: P42892===============
+CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs
+GG_Chr1_CGI 1733, chr1, 21225081, 21225438, 63.6, 357, 0.89, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+GG_Chr1_CGI 1734, chr1, 21236185, 21236604, 58.7, 419, 0.78, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+GG_Chr1_CGI 1735, chr1, 21253483, 21253750, 61.4, 267, 0.81, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+PM_Chr1_CGI 1387, chr1, 21224927, 21225680, 63.1, 754, 0.6, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+PM_Chr1_CGI 1388, chr1, 21236113, 21236799, 57.0, 687, 0.6, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+PM_Chr1_CGI 1389, chr1, 21253162, 21254036, 53.1, 875, 0.6, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+PM_Chr1_CGI 1390, chr1, 21260307, 21260811, 56.0, 505, 0.605, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+TJ_Chr1_CGI 699, chr1, 21224983, 21225658, 63.3, 676, 0.65, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+TJ_Chr1_CGI 700, chr1, 21236140, 21236731, 58.1, 592, 0.65, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+TJ_Chr1_CGI 701, chr1, 21253415, 21254012, 55.0, 598, 0.652, Intragenic, ECE1, -, NM_001113347; NM_001397; NM_001113348; NM_001113349;
+--------------------------------------------------------------------
+This gene has a total number of  10   CpG Islands associated with it.
+--------------------------------------------------------------------
+Gardiner-Garden and Frommer algorithm found 3 CGIs  with 0  Promoter CGIs | 3  Intragenic CGIs |  0 Gene-terminal CGIs.
+Takai-Jones algorithm found  3 CGIs with 0 Promoter CGIs | 3  Intragenic CGIs |  0 Gene-terminal CGIs.
+Ponger-Mouchiroud algorithm found  4 CGIswith  0 Promoter CGIs | 4  Intragenic CGIs |  0 Gene-terminal CGIs.
+
