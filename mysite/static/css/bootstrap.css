@@ -127,13 +127,13 @@ samp {
 }
 
 
-.container {
+.containerd {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
 }
 
-.container a {
+.containerd a {
     float: left;
     font-size: 16px;
     color: white;
@@ -157,7 +157,7 @@ samp {
     background-color: inherit;
 }
 
-.container a:hover, .dropdown:hover .dropbtn {
+.containerd a:hover, .dropdown:hover .dropbtn {
     background-color: red;
 }
 
