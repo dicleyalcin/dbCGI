@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -108,6 +112,39 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
+.btnd {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 2px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 14px;
+  background: #dbdbdb;
+  padding: 10px 20px 4px 8px;
+  border: solid #1f628d 3px;
+  text-decoration: none;
+}
+
+.btnn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #bd1515;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnn:hover {
+  background: #cf8c8c;
+  text-decoration: none;
+}
+
+
+
 button,
 input,
 optgroup,
@@ -1291,9 +1328,19 @@ p {
   margin: 0 0 10px;
 }
 .lead {
-  margin-bottom: 20px;
-  font-size: 16px;
-  font-weight: 300;
+  margin-top: -80px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+.lead2 {
+  background-color: silver;
+  margin-top: auto;
+  margin-bottom: -50px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
@@ -3152,6 +3199,32 @@ fieldset[disabled] .btn-default.focus {
   background-color: #204d74;
   border-color: #122b40;
 }
+
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+
+
+
+
+
+
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
@@ -6516,8 +6589,8 @@ button.close {
 }
 .center-block {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 25%;
+  margin-left: 2%;
 }
 .pull-right {
   float: right !important;
@@ -6760,6 +6833,67 @@ button.close {
   }
 }
 
+div.header{
+	padding: 0;
+	color: white;
+	margin-bottom:2px;
+	width:100%;
+	background-color: #3F3F3F;
+	clear: left;
+	text-align: center;
+	position: fixed;
+	overflow: auto;
+}
+
+ul2 {
+	list-style-type: none;
+	margin-top:0;
+	padding: 1px;
+	width: 12%;
+	height: 100%;
+	background-color: darkgray;
+	position: fixed;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 10px 8px 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: mediumaquamarine;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: mediumpurple;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+
 
 .button {
  
@@ -6788,12 +6922,12 @@ button.close {
 
 
 .logo{
-
-    width: 300px;
-    height: 120px;
+	
+    width: 350px;
+    height: 140px;
     float: center;
     background: url('../images/logo.png');
-    background-size: 300px;
+    background-size: 350px;
     
 }
 
@@ -6809,7 +6943,7 @@ button.close {
 
 .unllogo{
     width: 150px;
-    height: 62px;
+    height: 61px;
     float: center;
     background: url('../images/unl.gif');
     background-size: 150px;
@@ -6826,7 +6960,7 @@ button.close {
 }
 
 .boxed {
-  background: #ccfaf6;
+  background-color: lightgray;
 }
 
 
