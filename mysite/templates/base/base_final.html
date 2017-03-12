@@ -83,13 +83,28 @@
                 }
             </script> 
 
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+    }
+    </script>
+
 <head>
 
 
-
-    <div class="container-fluid">
 	<div class="row">
-        <div class="header">
             <a class="active" href="http://otulab.unl.edu:9000/">Home</a>
             <a href="/static/readme/readme.html">Documentation</a>
             <div class="dropdown">
@@ -103,8 +118,8 @@
                 </div>
             </div> 
             <a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
-        </div>
-        </div>
+    </div>
+
 
 <body>
 	<div class="row">
@@ -212,23 +227,6 @@
     <script src="js/scripts.js"></script>
 
 
-    <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-        }
-    }
-    }
-    </script>
 
   </body>
   </head>
