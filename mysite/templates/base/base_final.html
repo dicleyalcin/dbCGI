@@ -19,6 +19,24 @@
     <!--<link href="../../static/css/style.css" rel="stylesheet">-->
     <link href="../../static/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
+        <script type="text/javascript">
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+            var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+        }
+        </script>
+
 
         <script type="text/javascript">                                        
             var created = 0;
@@ -272,23 +290,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 
-    <script>
-    /* When the user clicks on the button, 
-    toggle between hiding and showing the dropdown content */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-        }
-    }
-    }
-    </script>
 
   </body>
   </head>
