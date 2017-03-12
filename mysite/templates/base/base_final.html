@@ -89,22 +89,24 @@
 
     <div class="container-fluid">
 	<div class="row">
-	    <div class="header"> 
-        <ul>
-        <li><a class="active" href="http://otulab.unl.edu:9000/">Home</a></li>
-        <li><a href="/static/readme/readme.html">Tutorial</a></li2>
-        <li><a href="/static/readme/hg38.html"> <b>Human (Hg38)</b> Statistics</a></li>
-        <li><a href="/static/readme/mm10.html"> <b>Mouse (Mm10)</b> Statistics</a></li>
-        <li><a href="/static/readme/dm3.html"> <b>Fruit Fly (Dm3)</b> Statistics</a></li>
-        <li><a href="/static/readme/ce10.html"> <b>Worm (Ce10)</b> Statistics</a></li>
-        <li><a href="/static/readme/rn6.html"> <b> Rat (Rn6)</b> Statistics</a></li>
-        <li><a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
-        <!--<li><a href="#cite">Please cite</a></li>-->
-        </ul23>
-    </div> 
-		<div class="col-md-12">
-		</div>
-	</div>
+        <div class="col-md-12">
+        <div class="container">
+            <a class="active" href="http://otulab.unl.edu:9000/">Home</a>
+            <a href="/static/readme/readme.html">Documentation</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Genome Statistics</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="/static/readme/hg38.html">Human (hg38)</a>
+                    <a href="/static/readme/mm10.html">Mouse (mm10)</a>
+                    <a href="/static/readme/dm3.html">Fruit fly (dm3)</a>
+                    <a href="/static/readme/ce10.html">Worm (ce10)</a>
+                    <a href="/static/readme/rn6.html">Rat (rn6)</a>      
+                </div>
+            </div> 
+            <a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
+        </div>
+        </div>
+        </div>
 
 <body>
 	<div class="row">
@@ -210,6 +212,26 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
+    }
+    }
+    </script>
+
   </body>
   </head>
 </html>
