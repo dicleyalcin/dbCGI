@@ -175,14 +175,14 @@
                 <form id="ana" enctype="multipart/form-data" method="POST">                                                                                                   
                             <h3> STEP 1: please choose an organism and genome assembly: </h3>  
                             {% csrf_token %}                          
-                            <div class="boxed">
+                            <div>
                                 <div id="myDiv"></div>
                                 {{ form.as_p }} 
                             </div>          
                            <br>
                            
                            <h3> STEP 2: Upload your file (Gene List) </h3>
-                           <div class="boxed">
+                           <div >
                                 {{ IDform.as_p }}    
                                 (<a href="../../static/readme/idfile.txt"> HERE </a> you can find a sample Gene ID File as an example.) 
                                 <br>
@@ -192,7 +192,7 @@
                            <br>
                            
                            <h3> STEP 2: Upload your file (Chromosomal locations) </h3>                               
-                           <div class="boxed">                               
+                           <div>                               
                                 {{ locForm.as_p }} 
                                  (<a href="../../static/readme/locfile.txt"> HERE </a> you can find a sample Chromosomal Location File as an example.)
                                  <br>
