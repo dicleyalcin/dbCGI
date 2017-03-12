@@ -87,19 +87,87 @@
 
 
   <body>
+    
+        <style>
+        div.header{
+            padding: 0;
+            color: white;
+            margin-bottom:2px;
+            width:100%;
+            background-color: #3F3F3F;
+            clear: left;
+            text-align: center;
+            position: fixed;
+            overflow: auto;
+        }
+
+        body2 {
+            margin: 0;
+            
+        }
+
+        ul23 {
+            list-style-type: none;
+            margin-top:0;
+            padding: 1px;
+            width: 12%;
+            height: 100%;
+            background-color: darkgray;
+            position: fixed;
+            overflow: auto;
+        }
+
+        li2 a {
+            display: block;
+            color: #000;
+            padding: 10px 8px 8px 16px;
+            text-decoration: none;
+        }
+
+        li2 a.active {
+            background-color: mediumaquamarine;
+            color: white;
+        }
+
+        li2 a:hover:not(.active) {
+            background-color: mediumpurple;
+            color: white;
+        }
+
+        ul2 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li2 {
+            float: left;
+        }
+
+        li2 a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+    </style>
 
     <div class="container-fluid">
 	<div class="row">
 	    <div class="header"> 
-        <ul>
-        <li><a class="active" href="http://otulab.unl.edu:9000/">Home</a></li>
-        <li><a href="/static/readme/readme.html">Tutorial</a></li>
-        <li><a href="/static/readme/hg38.html"> <b>Human (Hg38)</b> Statistics</a></li>
-        <li><a href="/static/readme/mm10.html"> <b>Mouse (Mm10)</b> Statistics</a></li>
-        <li><a href="/static/readme/dm3.html"> <b>Fruit Fly (Dm3)</b> Statistics</a></li>
-        <li><a href="/static/readme/ce10.html"> <b>Worm (Ce10)</b> Statistics</a></li>
-        <li><a href="/static/readme/rn6.html"> <b> Rat (Rn6)</b> Statistics</a></li>
-        <li><a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
+        <ul2>
+        <li2><a class="active" href="http://otulab.unl.edu:9000/">Home</a></li2>
+        <li2><a href="/static/readme/readme.html">Tutorial</a></li2>
+        <li2><a href="/static/readme/hg38.html"> <b>Human (Hg38)</b> Statistics</a></li2>
+        <li2><a href="/static/readme/mm10.html"> <b>Mouse (Mm10)</b> Statistics</a></li2>
+        <li2><a href="/static/readme/dm3.html"> <b>Fruit Fly (Dm3)</b> Statistics</a></li2>
+        <li2><a href="/static/readme/ce10.html"> <b>Worm (Ce10)</b> Statistics</a></li2>
+        <li2><a href="/static/readme/rn6.html"> <b> Rat (Rn6)</b> Statistics</a></li2>
+        <li2><a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li2>
         <!--<li><a href="#cite">Please cite</a></li>-->
         </ul>
     </div> 
