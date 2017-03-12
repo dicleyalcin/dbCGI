@@ -6589,8 +6589,8 @@ button.close {
 }
 .center-block {
   display: block;
-  margin-right: 25%;
-  margin-left: 2%;
+  margin-right: 40%;
+  margin-left: 10%;
 }
 .pull-right {
   float: right !important;
