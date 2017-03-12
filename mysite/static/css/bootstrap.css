@@ -128,11 +128,11 @@ samp {
 
 .btnn {
   -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
+  -moz-border-radius: 7;
+  border-radius: 7px;
   font-family: Arial;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 10px;
   background: #bd1515;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
