@@ -121,7 +121,31 @@
 				<br>
                 dbCGI currently employs three CpG island detection algorithms and is available for five organisms. 
                 Please refer to the <a href="../../static/readme/readme.html"> tutorial </a> for more details. dbCGI annotates CGIs in relation to genes using the following criteria:
-
+                	                    <center>
+		                    <h2>CGI Types</h2>
+						<table align="center">
+							<tr>
+								<th>Type</th>
+								<th>Definition</th>
+							</tr>
+							<tr>
+								<td>Promoter</td>
+								<td>CGI overlaps with [-5kb,TSS] (TSS: Transcription Start Site) </td>
+							</tr>
+							<tr>
+								<td>Intragenic</td>
+								<td>CGI overlaps with [TSS,TES] (TES: Transcription End Site)</td>
+							</tr>
+							<tr>
+								<td>Gene-Terminal</td>
+								<td>CGI overlaps with [CDSEnd, TES] (CDSEnd: Coding Sequence End Site)</td>
+							</tr>
+							<tr>
+								<td>Intergenic</td>
+								<td>CGI is not associated with any gene</td>
+							</tr>
+						</table>
+			</center>
 		</div>
 		<div class="col-md-5">
 		                <form id="ana" enctype="multipart/form-data" method="POST">                                                                                                   
@@ -176,32 +200,6 @@
 	</div>
 	<div class="row">
 		<div class="col-md-5">
-	                    <center>
-		                    <h2>CGI Types</h2>
-						<table align="center">
-							<tr>
-								<th>Type</th>
-								<th>Definition</th>
-							</tr>
-							<tr>
-								<td>Promoter</td>
-								<td>CGI overlaps with [-5kb,TSS] (TSS: Transcription Start Site) </td>
-							</tr>
-							<tr>
-								<td>Intragenic</td>
-								<td>CGI overlaps with [TSS,TES] (TES: Transcription End Site)</td>
-							</tr>
-							<tr>
-								<td>Gene-Terminal</td>
-								<td>CGI overlaps with [CDSEnd, TES] (CDSEnd: Coding Sequence End Site)</td>
-							</tr>
-							<tr>
-								<td>Intergenic</td>
-								<td>CGI is not associated with any gene</td>
-							</tr>
-						</table>
-					<br>
-			</center>
 		</div>
 	</div>
 </div>
