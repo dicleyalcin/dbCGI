@@ -6960,4 +6960,13 @@ li a {
 }
 
 
+   div.vertical-line{
+      width: 1px;
+      background-color: silver;
+      height: 100%;
+      float: left;
+      border: 2px ridge silver ;
+      border-radius: 2px;
+    }
+
 /*# sourceMappingURL=bootstrap.css.map */
