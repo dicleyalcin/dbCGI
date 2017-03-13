@@ -38,13 +38,13 @@
         }
 
         li a.active {
-            background-color: grey;
-            color: grey;
+            background-color: mediumaquamarine;
+            color: white;
         }
 
         li a:hover:not(.active) {
-            background-color: grey;
-            color: grey;
+            background-color: mediumpurple;
+            color: white;
         }
 
         ul {
@@ -55,13 +55,13 @@
             background-color: #333;
         }
 
-        li {
+        li2 {
             float: left;
         }
 
-        li a {
+        li2 a {
             display: block;
-            color: white;
+            color: grey;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -196,17 +196,17 @@
             <h2> Input File </h2> 
             dbCGI accepts plain text files as input. There are two different input file types: 
                 <ol type="1">
-                    <li>Gene ID File: In this file each line should contain one gene identifier with no separators 
+                    <li2>Gene ID File: In this file each line should contain one gene identifier with no separators 
                         like ,/;/:/ etc. The embedded ID mapper accommodates a wide range of gene identifier types. 
                         <a href='idfile.txt'> Here </a> you can find a sample Gene ID File.
-                    </li>
-                    <li>Chromosomal Location File: In this file each line represents one continuous interval on the genome. 
+                    </li2>
+                    <li2>Chromosomal Location File: In this file each line represents one continuous interval on the genome. 
                         Chromosome number is indicated by ChrN (e.g. Chr1, Chr2, etc.) followed by the start and end positions, 
                         all separated by '-' (e.g. Chr3-736828-1364826). If you want to query the entire chromosome, 
                         do not enter any position information following the chromosome number. 
                         X and Y chromosomes are denoted by ChrX and ChrY, respectively. 
                         <a href='locfile.txt'> Here </a> you can find a sample Chromosomal Location File.
-                    </li>
+                    </li2>
                 </ol>             
             <!--Input files can be without extension, (.txt is preferred)
             Each line should only contain one gene, with no separators like ,/;/:/ etc.
