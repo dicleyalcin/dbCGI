@@ -8,7 +8,7 @@
 
     <title>{% block title %} dbCGI {% endblock %}</title>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<link rel='shortcut icon' href='/static/images/favicon.ico' type='image/x-icon'/>
+	<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon"/>
     
 	
 
@@ -163,9 +163,6 @@
             </style>
 
 
-<head>
-
-
 
 <body>
     	<div class="container">
@@ -181,7 +178,7 @@
                     <a href="/static/readme/rn6.html">Rat (rn6)</a>      
                 </div>
             </div> 
-            <a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a></li>
+            <a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a>
     </div>
 	<div class="row">
         
@@ -227,9 +224,10 @@
 		<div class="col-md-5">
 		                <form id="ana" enctype="multipart/form-data" method="POST">                                                                                                   
                             <h3> STEP 1: please choose an organism and genome assembly: </h3>  
-                            {% csrf_token %}                          
                             <div>
-                                <div id="myDiv"></div>
+                            {% csrf_token %}                          
+							</div>
+                            <div>
                                 {{ form.as_p }} 
                             </div>          
                            <br>
