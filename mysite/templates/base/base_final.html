@@ -225,8 +225,9 @@
 		                <form id="ana" enctype="multipart/form-data" method="POST">                                                                                                   
                             <h3> STEP 1: please choose an organism and genome assembly: </h3>  
                             <div>
-                            {% csrf_token %}                          
                             <div id="myDiv"></div>
+                            {% csrf_token %}                          
+                            
 							</div>
                             <div>
                                 {{ form.as_p }} 
