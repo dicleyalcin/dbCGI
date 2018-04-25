@@ -110,13 +110,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'cgi', 
-        'USER': 'dyalcin',
-        'PASSWORD': 'Sng87!65@#oj',
+        'USER': 'root',
+        'PASSWORD': 'sng87!65@oj',
         'HOST': 'localhost',
         'PORT': '3306',
     }
 }
 
+#dyalcin
+#Sng87!65@#oj
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
