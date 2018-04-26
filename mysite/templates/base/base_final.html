@@ -17,7 +17,7 @@
 
     <!--<link href="../../static/css/bootstrap.min.css" rel="stylesheet">-->
     <!--<link href="../../static/css/style.css" rel="stylesheet">-->
-    <link href="../../static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/mysite/static/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}">
         <script type="text/javascript">
         /* When the user clicks on the button, 
@@ -171,11 +171,11 @@
             <div class="dropdown">
                 <button class="dropbtn" onclick="myFunction()">Genome Statistics</button>
                 <div class="dropdown-content" id="myDropdown">
-                    <a href="/static/readme/hg38.html">Human (hg38)</a>
-                    <a href="/static/readme/mm10.html">Mouse (mm10)</a>
-                    <a href="/static/readme/dm3.html">Fruit fly (dm3)</a>
-                    <a href="/static/readme/ce10.html">Worm (ce10)</a>
-                    <a href="/static/readme/rn6.html">Rat (rn6)</a>      
+                    <a href="/mysite/static/readme/hg38.html">Human (hg38)</a>
+                    <a href="/mysite/static/readme/mm10.html">Mouse (mm10)</a>
+                    <a href="/mysite/static/readme/dm3.html">Fruit fly (dm3)</a>
+                    <a href="/mysite/static/readme/ce10.html">Worm (ce10)</a>
+                    <a href="/mysite/static/readme/rn6.html">Rat (rn6)</a>      
                 </div>
             </div> 
             <a href="https://github.com/dicleyalcin/dbCGI"> <b> Git Repository</b> </a>
@@ -194,7 +194,7 @@
                 <br>
 				<br>
                 dbCGI currently employs three CpG island detection algorithms and is available for five organisms. 
-                Please refer to the <a href="../../static/readme/readme.html"> tutorial </a> for more details. dbCGI annotates CGIs in relation to genes using the following criteria:
+                Please refer to the <a href="/mysite/static/readme/readme.html"> tutorial </a> for more details. dbCGI annotates CGIs in relation to genes using the following criteria:
 		                    <h3>CGI Types</h3>
 						<table align="center">
 							<tr>
@@ -254,7 +254,7 @@
                            <h3> STEP 2: Upload your file (Chromosomal locations) </h3>                               
                            <div>                               
                                 {{ locForm.as_p }} 
-                                 (<a href="../../static/readme/locfile.txt"> HERE </a> you can find a sample Chromosomal Location File as an example.)
+                                 (<a href="/mysite/static/readme/locfile.txt"> HERE </a> you can find a sample Chromosomal Location File as an example.)
                                  <br>
                                  <input type="submit" value="Submit locations" />  
                            </div>                             
