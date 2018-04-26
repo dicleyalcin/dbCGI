@@ -778,7 +778,7 @@ def hg38IDQuery(uploaded_file):
 			header = 'CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs'
 			header.replace("'",'')
 			f.write(header+"\n")
-			RES = Hg38.objects.raw('SELECT * FROM Hg38 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Hg38.objects.raw('SELECT 1 id, * FROM Hg38 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 			for obj in RES:
 				AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 				AssoCGI = [str(i) for i in AssoCGI]
