@@ -163,11 +163,11 @@ STATIC_ROOT = os.path.join("mysite/static")
 #URL prefix for static files.
 #STATIC_URL = '/site_media/static/'
 
-STATIC_URL = '/static/'
+STATIC_URL = '/mysite/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(PACKAGE_ROOT, "static"),
-]
+#STATICFILES_DIRS = [
+#    os.path.join(PACKAGE_ROOT, "static"),
+#]
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
