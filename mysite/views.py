@@ -150,7 +150,7 @@ def ce10IDQuery(uploaded_file):
 			GG = []
 			TJ = []
 			PM = []	
-								
+			select 1 id, count(*) from records')					
 			ID = str(PKs[pk])
 			originalID = str(InIDs[pk])
 			originID = originalID.replace("\n","")
@@ -159,7 +159,7 @@ def ce10IDQuery(uploaded_file):
 			header = 'CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs'
 			header.replace("'",'')
 			f.write(header+"\n")
-			RES = Ce10.objects.raw('SELECT * FROM Ce10 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Ce10.objects.raw('SELECT 1 id * FROM Ce10 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 			for obj in RES:
 				AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 				AssoCGI = [str(i) for i in AssoCGI]
@@ -778,7 +778,7 @@ def hg38IDQuery(uploaded_file):
 			header = 'CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs'
 			header.replace("'",'')
 			f.write(header+"\n")
-			RES = Hg38.objects.raw('SELECT * FROM Hg38 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Hg38.objects.raw('SELECT 1 id * FROM Hg38 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 			for obj in RES:
 				AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 				AssoCGI = [str(i) for i in AssoCGI]
@@ -1383,7 +1383,7 @@ def mm10IDQuery(uploaded_file):
 			header = 'CGID, chrom, CGIstart, CGIend, PerGC, Length, ObsExp, Annotation Type, GeneSym, Strand, RefSeqIDs'
 			header.replace("'",'')
 			f.write(header+"\n")						
-			RES = Mm10.objects.raw('SELECT * FROM Mm10 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\" or refid27 like  \"%%%%%s;%%%%\" or refid28 like  \"%%%%%s;%%%%\" or refid29 like  \"%%%%%s;%%%%\" or refid30 like  \"%%%%%s;%%%%\" or refid31 like  \"%%%%%s;%%%%\" or refid32 like  \"%%%%%s;%%%%\" or refid33 like  \"%%%%%s;%%%%\" or refid34 like  \"%%%%%s;%%%%\" or refid35 like  \"%%%%%s;%%%%\" or refid36 like  \"%%%%%s;%%%%\" or refid37 like  \"%%%%%s;%%%%\" or refid38 like  \"%%%%%s;%%%%\" or refid39 like  \"%%%%%s;%%%%\" or refid40 like  \"%%%%%s;%%%%\" or refid41 like  \"%%%%%s;%%%%\" or refid42 like  \"%%%%%s;%%%%\" or refid43 like  \"%%%%%s;%%%%\" or refid44 like  \"%%%%%s;%%%%\" or refid45 like  \"%%%%%s;%%%%\" or refid46 like  \"%%%%%s;%%%%\" or refid47 like  \"%%%%%s;%%%%\" or refid48 like  \"%%%%%s;%%%%\" or refid49 like  \"%%%%%s;%%%%\" or refid50 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Mm10.objects.raw('SELECT 1 id * FROM Mm10 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\" or refid27 like  \"%%%%%s;%%%%\" or refid28 like  \"%%%%%s;%%%%\" or refid29 like  \"%%%%%s;%%%%\" or refid30 like  \"%%%%%s;%%%%\" or refid31 like  \"%%%%%s;%%%%\" or refid32 like  \"%%%%%s;%%%%\" or refid33 like  \"%%%%%s;%%%%\" or refid34 like  \"%%%%%s;%%%%\" or refid35 like  \"%%%%%s;%%%%\" or refid36 like  \"%%%%%s;%%%%\" or refid37 like  \"%%%%%s;%%%%\" or refid38 like  \"%%%%%s;%%%%\" or refid39 like  \"%%%%%s;%%%%\" or refid40 like  \"%%%%%s;%%%%\" or refid41 like  \"%%%%%s;%%%%\" or refid42 like  \"%%%%%s;%%%%\" or refid43 like  \"%%%%%s;%%%%\" or refid44 like  \"%%%%%s;%%%%\" or refid45 like  \"%%%%%s;%%%%\" or refid46 like  \"%%%%%s;%%%%\" or refid47 like  \"%%%%%s;%%%%\" or refid48 like  \"%%%%%s;%%%%\" or refid49 like  \"%%%%%s;%%%%\" or refid50 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 			
 			for obj in RES:
 				AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
@@ -1994,7 +1994,7 @@ def dm3IDQuery(uploaded_file):
 			header.replace("'",'')
 			f.write(header+"\n")
 						
-			RES = Dm3.objects.raw('SELECT * FROM Dm3 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\" or refid27 like  \"%%%%%s;%%%%\" or refid28 like  \"%%%%%s;%%%%\" or refid29 like  \"%%%%%s;%%%%\" or refid30 like  \"%%%%%s;%%%%\" or refid31 like  \"%%%%%s;%%%%\" or refid32 like  \"%%%%%s;%%%%\" or refid33 like  \"%%%%%s;%%%%\" or refid34 like  \"%%%%%s;%%%%\" or refid35 like  \"%%%%%s;%%%%\" or refid36 like  \"%%%%%s;%%%%\" or refid37 like  \"%%%%%s;%%%%\" or refid38 like  \"%%%%%s;%%%%\" or refid39 like  \"%%%%%s;%%%%\" or refid40 like  \"%%%%%s;%%%%\" or refid41 like  \"%%%%%s;%%%%\" or refid42 like  \"%%%%%s;%%%%\" or refid43 like  \"%%%%%s;%%%%\" or refid44 like  \"%%%%%s;%%%%\" or refid45 like  \"%%%%%s;%%%%\" or refid46 like  \"%%%%%s;%%%%\" or refid47 like  \"%%%%%s;%%%%\" or refid48 like  \"%%%%%s;%%%%\" or refid49 like  \"%%%%%s;%%%%\" or refid50 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Dm3.objects.raw('SELECT 1 id * FROM Dm3 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\" or refid27 like  \"%%%%%s;%%%%\" or refid28 like  \"%%%%%s;%%%%\" or refid29 like  \"%%%%%s;%%%%\" or refid30 like  \"%%%%%s;%%%%\" or refid31 like  \"%%%%%s;%%%%\" or refid32 like  \"%%%%%s;%%%%\" or refid33 like  \"%%%%%s;%%%%\" or refid34 like  \"%%%%%s;%%%%\" or refid35 like  \"%%%%%s;%%%%\" or refid36 like  \"%%%%%s;%%%%\" or refid37 like  \"%%%%%s;%%%%\" or refid38 like  \"%%%%%s;%%%%\" or refid39 like  \"%%%%%s;%%%%\" or refid40 like  \"%%%%%s;%%%%\" or refid41 like  \"%%%%%s;%%%%\" or refid42 like  \"%%%%%s;%%%%\" or refid43 like  \"%%%%%s;%%%%\" or refid44 like  \"%%%%%s;%%%%\" or refid45 like  \"%%%%%s;%%%%\" or refid46 like  \"%%%%%s;%%%%\" or refid47 like  \"%%%%%s;%%%%\" or refid48 like  \"%%%%%s;%%%%\" or refid49 like  \"%%%%%s;%%%%\" or refid50 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 
 
 			for obj in RES:
@@ -2604,7 +2604,7 @@ def rn6IDQuery(uploaded_file):
 			header.replace("'",'')
 			f.write(header+"\n")
 						
-			RES = Rn6.objects.raw('SELECT * FROM Rn6 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
+			RES = Rn6.objects.raw('SELECT 1 id * FROM Rn6 WHERE type1!="Intergenic" and refid1 like  \"%%%%%s;%%%%\" or refid2 like  \"%%%%%s;%%%%\" or refid3 like  \"%%%%%s;%%%%\" or refid4 like  \"%%%%%s;%%%%\" or refid5 like  \"%%%%%s;%%%%\" or refid6 like  \"%%%%%s;%%%%\" or refid7 like  \"%%%%%s;%%%%\" or refid8 like  \"%%%%%s;%%%%\" or refid9 like  \"%%%%%s;%%%%\" or refid10 like  \"%%%%%s;%%%%\" or refid11 like  \"%%%%%s;%%%%\" or refid12 like  \"%%%%%s;%%%%\" or refid13 like  \"%%%%%s;%%%%\" or refid14 like  \"%%%%%s;%%%%\" or refid15 like  \"%%%%%s;%%%%\" or refid16 like  \"%%%%%s;%%%%\" or refid17 like  \"%%%%%s;%%%%\" or refid18 like  \"%%%%%s;%%%%\" or refid19 like  \"%%%%%s;%%%%\" or refid20 like  \"%%%%%s;%%%%\" or refid21 like  \"%%%%%s;%%%%\" or refid22 like  \"%%%%%s;%%%%\" or refid23 like  \"%%%%%s;%%%%\" or refid24 like  \"%%%%%s;%%%%\" or refid25 like  \"%%%%%s;%%%%\" or refid26 like  \"%%%%%s;%%%%\"' % (ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID,ID))
 
 
 			for obj in RES:
@@ -3163,7 +3163,7 @@ def hg38LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 								
-				Q = Hg38.objects.raw('SELECT * FROM Hg38 WHERE chrom = "%s"' % (chr))
+				Q = Hg38.objects.raw('SELECT 1 id * FROM Hg38 WHERE chrom = "%s"' % (chr))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -3202,7 +3202,7 @@ def hg38LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")	
 										
-				Q = Hg38.objects.raw('SELECT * FROM Hg38 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Hg38.objects.raw('SELECT 1 id * FROM Hg38 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -3686,7 +3686,7 @@ def mm10LocQuery(uploaded_file):
 				
 
 							
-				Q = Mm10.objects.raw('SELECT * FROM Mm10 WHERE chrom = "%s"' % (chr))
+				Q = Mm10.objects.raw('SELECT 1 id * FROM Mm10 WHERE chrom = "%s"' % (chr))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -3739,7 +3739,7 @@ def mm10LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 
-				Q = Mm10.objects.raw('SELECT * FROM Mm10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Mm10.objects.raw('SELECT 1 id * FROM Mm10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -4240,7 +4240,7 @@ def dm3LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 	
-				Q = Dm3.objects.raw('SELECT * FROM Dm3 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Dm3.objects.raw('SELECT 1 id * FROM Dm3 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -4292,7 +4292,7 @@ def dm3LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 				
-				Q = Dm3.objects.raw('SELECT * FROM Dm3 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Dm3.objects.raw('SELECT 1 id * FROM Dm3 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -4777,7 +4777,7 @@ def ce10LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 	
-				Q = Ce10.objects.raw('SELECT * FROM Ce10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Ce10.objects.raw('SELECT 1 id * FROM Ce10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -4817,7 +4817,7 @@ def ce10LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 				
-				Q = Ce10.objects.raw('SELECT * FROM Ce10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Ce10.objects.raw('SELECT 1 id * FROM Ce10 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -5289,7 +5289,7 @@ def rn6LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 	
-				Q = Rn6.objects.raw('SELECT * FROM Rn6 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Rn6.objects.raw('SELECT 1 id * FROM Rn6 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
@@ -5329,7 +5329,7 @@ def rn6LocQuery(uploaded_file):
 				header.replace("'",'')
 				f2.write(header+"\n")
 				
-				Q = Rn6.objects.raw('SELECT * FROM Rn6 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
+				Q = Rn6.objects.raw('SELECT 1 id * FROM Rn6 WHERE chrom = "%s" and cgistart >= %d AND cgiend <= %d' % (chr, sLoc, eLoc))
 				for obj in Q:
 					AssoCGI = [obj.cgid, obj.chrom, obj.cgistart, obj.cgiend, obj.pergc, obj.length, obj.obsexp]
 					AssoCGI = [str(i) for i in AssoCGI]
